@@ -35,13 +35,24 @@ export default function Work({ visibleSection }) {
       projectsElements.forEach((project) => {
         if (project.getBoundingClientRect().top < window.innerHeight - 250) {
           project.classList.add("visible");
-        } else if ((project.getBoundingClientRect().top > -100)) {
+        } else if (project.getBoundingClientRect().top > -100) {
           project.classList.remove("visible");
         }
       });
     };
   };
-
+  window.onload = () => {
+    let projectsElements = document.querySelectorAll(".project");
+    window.ontouchmove = () => {
+      projectsElements.forEach((project) => {
+        if (project.getBoundingClientRect().top < window.innerHeight - 250) {
+          project.classList.add("visible");
+        } else if (project.getBoundingClientRect().top > -100) {
+          project.classList.remove("visible");
+        }
+      });
+    };
+  };
   return (
     <div id="work" className="section work">
       <h1>&lt;MY_WORK/&gt;</h1>
