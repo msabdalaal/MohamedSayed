@@ -1,5 +1,7 @@
 import "../css/About.css";
 import myPic from "../assets/My-Pic.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 export default function About({ visibleSection }) {
   return (
     <div id="about" className="section about">
@@ -20,11 +22,17 @@ export default function About({ visibleSection }) {
             ago, I've done remote work for agencies.
           </p>
         </div>
-        <img
-          src={myPic}
-          alt="My Personal Picture"
-          className={`${visibleSection == "about" && "visible"}`}
-        ></img>
+        <div
+          className={`personalImage ${visibleSection == "about" && "visible"}`}
+        >
+          <img src={myPic} alt="My Personal Picture"></img>
+          <a
+            href="/MohamedSayed/Mohamed_sayed_Resume.pdf"
+            download="Mohamed_sayed_Resume"
+          >
+            <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download CV
+          </a>
+        </div>
       </div>
     </div>
   );
