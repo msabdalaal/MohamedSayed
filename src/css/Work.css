@@ -8,6 +8,7 @@
   background-image: url(../assets/Work-bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  overflow-x: hidden;
 }
 .work h1 {
   text-align: center;
@@ -100,6 +101,9 @@
   transform: translateX(0);
 }
 @media (max-width: 600px) {
+  .work {
+    overflow-x: hidden;
+  }
   .projectsContainer .project {
     width: 100%;
   }
