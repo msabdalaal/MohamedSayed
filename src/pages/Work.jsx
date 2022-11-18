@@ -40,7 +40,7 @@ export default function Work({ visibleSection }) {
         }
       });
     };
-    document.body.ontouchmove = () => {
+    document.body.addEventListener("touchmove", () => {
       projectsElements.forEach((project) => {
         if (project.getBoundingClientRect().top < window.innerHeight - 250) {
           project.classList.add("visible");
@@ -48,7 +48,7 @@ export default function Work({ visibleSection }) {
           project.classList.remove("visible");
         }
       });
-    };
+    });
   };
   return (
     <div id="work" className="section work">

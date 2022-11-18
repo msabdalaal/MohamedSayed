@@ -98,7 +98,7 @@
   transition: 0.3s;
 }
 .visible {
-  transform: translateX(0);
+  transform: translateX(0) !important;
 }
 @media (max-width: 600px) {
   .work {
