@@ -18,7 +18,7 @@
   background-image: url("../assets/About-bg.png");
   background-repeat: no-repeat;
   background-position: center;
-  overflow: visible;
+  overflow-x: hidden;
 }
 .about h1 {
   text-align: center;
