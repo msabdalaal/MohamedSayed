@@ -7,8 +7,34 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/Contact.css";
 import { useState } from "react";
+import { faL } from "@fortawesome/free-solid-svg-icons";
 export default function Contact({ visibleSection }) {
   let [showThanksMessage, setShowThanksMessage] = useState(false);
+  let [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  function handleChange(e) {
+    setFormData((prev) => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value,
+      };
+    });
+  }
+  function validateForm() {
+    if (
+      formData.name != "" &&
+      formData.message != "" &&
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)
+    ) {
+      setShowThanksMessage(true);
+    } else {
+      alert(`please fill all fiellds
+and enter a valid Email`);
+    }
+  }
   return (
     <div id="contact" className="section contact">
       <h1>&lt;CONTACT_ME/&gt;</h1>
@@ -19,19 +45,9 @@ export default function Contact({ visibleSection }) {
         }`}
         id="contactFrom"
       >
-        <div className={`thanks ${showThanksMessage && "showThanks"}`}>
-          <div className="text">
-            <h2>
-              <span>Thanks For Sending An Email</span>
-            </h2>
-            <h2>I'll Respond To You ASAP</h2>
-          </div>
-          <button onClick={() => setShowThanksMessage(false)}>OK</button>
-        </div>
         <form
           action="https://formsubmit.co/edfc276360cae2a8feb9e48cff7f0b5a"
           method="POST"
-          onSubmit={() => setShowThanksMessage(true)}
         >
           <input type="hidden" name="_subject" value="New Message" />
           <input
@@ -40,16 +56,45 @@ export default function Contact({ visibleSection }) {
             value="https://msabdalaal.github.io/MohamedSayed/#contact"
           />
           <input type="hidden" name="_captcha" value="false" />
-          <input type="text" placeholder="Your Name" name="name" required />
-          <input type="email" placeholder="Your Email" name="email" required />
+          <input
+            onChange={(e) => handleChange(e)}
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            value={formData.name}
+            required
+          />
+          <input
+            onChange={(e) => handleChange(e)}
+            type="email"
+            placeholder="Your Email"
+            name="email"
+            value={formData.email}
+            required
+          />
           <textarea
+            onChange={(e) => handleChange(e)}
             placeholder="Your Message"
             className="form-control"
             name="message"
+            value={formData.message}
             rows="10"
             required
           ></textarea>
-          <button type="submit">Send Message</button>
+          <div className={`thanks ${showThanksMessage && "showThanks"}`}>
+            <div className="text">
+              <h2>
+                <span>Thanks For Sending An Email</span>
+              </h2>
+              <h2>I'll Respond To You ASAP</h2>
+            </div>
+            <button onClick={() => setShowThanksMessage(true)} type="submit">
+              OK
+            </button>
+          </div>
+          <button onClick={validateForm} type="button">
+            Send Message
+          </button>
         </form>
       </div>
       <ul>
