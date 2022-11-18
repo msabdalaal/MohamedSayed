@@ -27,6 +27,25 @@ function App() {
       }
     });
   });
+  window.addEventListener("load", () => {
+    document.body.addEventListener("touchmove", () => {
+      let about = document.getElementById("about");
+      let work = document.getElementById("work");
+      let contact = document.getElementById("contact");
+      if (window.scrollY < about.offsetTop - window.innerHeight / 2) {
+        setVisibleSection("home");
+      }
+      if (window.scrollY > about.offsetTop - window.innerHeight / 2) {
+        setVisibleSection("about");
+      }
+      if (window.scrollY > work.offsetTop - window.innerHeight / 2) {
+        setVisibleSection("work");
+      }
+      if (window.scrollY > contact.offsetTop - window.innerHeight / 2) {
+        setVisibleSection("contact");
+      }
+    });
+  });
   return (
     <main>
       <NavBar visibleSection={visibleSection} />
