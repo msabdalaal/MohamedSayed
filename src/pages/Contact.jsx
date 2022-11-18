@@ -24,15 +24,16 @@ export default function Contact({ visibleSection }) {
     });
   }
   function validateForm() {
-    if (
-      formData.name != "" &&
-      formData.message != "" &&
-      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)
-    ) {
-      setShowThanksMessage(true);
+    if (formData.name != "" && formData.message != "" && formData.email != "") {
+      if (
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(formData.email)
+      ) {
+        setShowThanksMessage(true);
+      } else {
+        alert("Enter a valid Email please");
+      }
     } else {
-      alert(`please fill all fiellds
-and enter a valid Email`);
+      alert(`please fill all fiellds`);
     }
   }
   return (
