@@ -9,7 +9,7 @@ import "../css/Contact.css";
 export default function Contact({visibleSection}) {
   return (
     <div id="contact" className="section contact">
-      <h1>&lt;ABOUT_ME/&gt;</h1>
+      <h1>&lt;CONTACT_ME/&gt;</h1>
       <h2>I'm excited to learn about your project. Ready to get started?</h2>
       <div className={`contactForm ${visibleSection == "contact" && "showContact"}`} id="contactFrom">
         <form

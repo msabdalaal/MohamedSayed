@@ -11,6 +11,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
+  min-height: 100vh;
   padding-bottom: 2rem;
   transition: all ease-in-out 0.3s;
   overflow-x: hidden;

@@ -98,9 +98,6 @@ button:hover {
   transition: all ease-in 0.2s;
   width: 70% !important;
 }
-.contact ul li {
-  width: 100%;
-}
 .contact ul li a {
   width: 100%;
 }
