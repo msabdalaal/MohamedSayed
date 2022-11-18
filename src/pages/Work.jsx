@@ -41,7 +41,7 @@ export default function Work({ visibleSection }) {
   // };
   document.body.onscroll = () => {
     projectsElements.forEach((project) => {
-      if (project.getBoundingClientRect().top < window.innerHeight - 250) {
+      if (project.getBoundingClientRect().top < window.innerHeight - window.innerHeight /4 ) {
         project.classList.add("visible");
       } else if (project.getBoundingClientRect().top > -100) {
         project.classList.remove("visible");

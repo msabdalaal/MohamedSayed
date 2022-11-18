@@ -14,16 +14,28 @@ function App() {
       let about = document.getElementById("about");
       let work = document.getElementById("work");
       let contact = document.getElementById("contact");
-      if (home.getBoundingClientRect().top < window.innerHeight - 250) {
+      if (
+        home.getBoundingClientRect().top <
+        window.innerHeight - window.innerHeight / 4
+      ) {
         setVisibleSection("home");
       }
-      if (about.getBoundingClientRect().top < window.innerHeight - 250) {
+      if (
+        about.getBoundingClientRect().top <
+        window.innerHeight - window.innerHeight / 4
+      ) {
         setVisibleSection("about");
       }
-      if (work.getBoundingClientRect().top < window.innerHeight - 250) {
+      if (
+        work.getBoundingClientRect().top <
+        window.innerHeight - window.innerHeight / 4
+      ) {
         setVisibleSection("work");
       }
-      if (contact.getBoundingClientRect().top < window.innerHeight - 250) {
+      if (
+        contact.getBoundingClientRect().top <
+        window.innerHeight - window.innerHeight / 4
+      ) {
         setVisibleSection("contact");
       }
     });
@@ -33,16 +45,28 @@ function App() {
     let about = document.getElementById("about");
     let work = document.getElementById("work");
     let contact = document.getElementById("contact");
-    if (home.getBoundingClientRect().top < window.innerHeight - 250) {
+    if (
+      home.getBoundingClientRect().top <
+      window.innerHeight - window.innerHeight / 4
+    ) {
       setVisibleSection("home");
     }
-    if (about.getBoundingClientRect().top < window.innerHeight - 250) {
+    if (
+      about.getBoundingClientRect().top <
+      window.innerHeight - window.innerHeight / 4
+    ) {
       setVisibleSection("about");
     }
-    if (work.getBoundingClientRect().top < window.innerHeight - 250) {
+    if (
+      work.getBoundingClientRect().top <
+      window.innerHeight - window.innerHeight / 4
+    ) {
       setVisibleSection("work");
     }
-    if (contact.getBoundingClientRect().top < window.innerHeight - 250) {
+    if (
+      contact.getBoundingClientRect().top <
+      window.innerHeight - window.innerHeight / 4
+    ) {
       setVisibleSection("contact");
     }
   });
