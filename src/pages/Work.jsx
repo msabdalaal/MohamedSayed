@@ -40,9 +40,6 @@ export default function Work({ visibleSection }) {
         }
       });
     };
-  };
-  window.onload = () => {
-    let projectsElements = document.querySelectorAll(".project");
     window.ontouchmove = () => {
       projectsElements.forEach((project) => {
         if (project.getBoundingClientRect().top < window.innerHeight - 250) {
