@@ -40,7 +40,7 @@ export default function Work({ visibleSection }) {
         }
       });
     };
-    window.ontouchmove = () => {
+    document.body.ontouchmove = () => {
       projectsElements.forEach((project) => {
         if (project.getBoundingClientRect().top < window.innerHeight - 250) {
           project.classList.add("visible");

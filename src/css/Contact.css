@@ -133,8 +133,6 @@ button:hover {
     display: none;
   }
 }
-@media (min-width: 1600px) {
-}
 @media (max-width: 600px) {
   .contact {
     padding: 1rem 2rem;
@@ -144,7 +142,7 @@ button:hover {
     font-size: 1.2rem;
   }
   .contactForm {
-    width: 100%;
+    width: 100% !important;
     padding: 1rem;
   }
   textarea {
