@@ -20,7 +20,7 @@ export default function Contact({visibleSection}) {
           <input
             type="hidden"
             name="_next"
-            value="https://msabdalaal.github.io/MohamedSayed/Thankyou.html"
+            value="/MohamedSayed/Thankyou.html"
           />
           <input type="hidden" name="_captcha" value="false" />
           <input type="text" placeholder="Your Name" name="name" required />
