@@ -29,27 +29,26 @@ export default function Work({ visibleSection }) {
     );
   });
 
-  window.onload = () => {
-    let projectsElements = document.querySelectorAll(".project");
-    window.onscroll = () => {
-      projectsElements.forEach((project) => {
-        if (project.getBoundingClientRect().top < window.innerHeight - 250) {
-          project.classList.add("visible");
-        } else if (project.getBoundingClientRect().top > -100) {
-          project.classList.remove("visible");
-        }
-      });
-    };
-    document.body.addEventListener("touchmove", () => {
-      projectsElements.forEach((project) => {
-        if (project.getBoundingClientRect().top < window.innerHeight - 250) {
-          project.classList.add("visible");
-        } else if (project.getBoundingClientRect().top > -100) {
-          project.classList.remove("visible");
-        }
-      });
+  let projectsElements = document.querySelectorAll(".project");
+  // window.onscroll = () => {
+  //   projectsElements.forEach((project) => {
+  //     if (project.getBoundingClientRect().top < window.innerHeight - 250) {
+  //       project.classList.add("visible");
+  //     } else if (project.getBoundingClientRect().top > -100) {
+  //       project.classList.remove("visible");
+  //     }
+  //   });
+  // };
+  document.body.onscroll = () => {
+    projectsElements.forEach((project) => {
+      if (project.getBoundingClientRect().top < window.innerHeight - 250) {
+        project.classList.add("visible");
+      } else if (project.getBoundingClientRect().top > -100) {
+        project.classList.remove("visible");
+      }
     });
   };
+
   return (
     <div id="work" className="section work">
       <h1>&lt;MY_WORK/&gt;</h1>
