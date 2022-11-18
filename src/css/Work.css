@@ -111,6 +111,7 @@
   .projectsContainer .project .heading h1 {
     font-size: 1.5rem;
     float: left;
+    text-align: left;
   }
   .projectsContainer .project .heading p {
     font-size: 0.8rem;
