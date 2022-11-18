@@ -1,0 +1,160 @@
+:root {
+  --black: #1d201f;
+  --blue: #2978a0;
+  --white: white;
+}
+/* Contact Start*/
+.contact {
+  position: relative;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  transition: all ease-in-out 0.3s;
+  padding: 4rem;
+}
+.contact h1 {
+  margin: 0;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+.contact h2 {
+  font-weight: 400;
+}
+.contactForm {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue);
+  z-index: 2;
+  border-radius: 0.3rem;
+  padding: 3rem;
+  width: 70% !important;
+  aspect-ratio: 3/2;
+  scale: 0;
+  transition: 0.3s;
+}
+.contactForm.showContact {
+  scale: 1;
+}
+.contactForm form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  gap: 2rem;
+}
+.contactForm form input,
+textarea,
+button {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+}
+.contactForm form input,
+button {
+  height: 3.5rem;
+  padding-left: 1rem;
+}
+textarea {
+  padding: 1rem;
+  height: 12rem !important;
+}
+input:focus {
+  outline-width: 0;
+  outline-color: transparent;
+}
+textarea:focus {
+  outline-width: 0;
+  outline-color: transparent;
+}
+button {
+  background-color: var(--blue);
+  border: 0.1rem solid var(--white);
+  color: var(--white);
+  transition: all ease-in 0.2s;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  border: 0.1rem solid var(--white);
+  color: var(--black);
+}
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  z-index: 1;
+  transition: all ease-in 0.2s;
+  width: 70% !important;
+}
+.contact ul li {
+  width: 100%;
+}
+.contact ul li a {
+  width: 100%;
+}
+.contact ul li a svg {
+  color: var(--black);
+  transition: all ease-in 0.2s;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.contact ul li a:hover svg {
+  color: var(--blue);
+}
+/* Contact End*/
+/* Contact Phone Start*/
+@media (max-width: 1400px) {
+  .contact h2 {
+    font-size: 1.2rem;
+  }
+  .contactForm {
+    width: 100%;
+    padding: 1rem;
+  }
+  textarea {
+    height: 5rem;
+  }
+  .contact ul {
+    width: 100%;
+  }
+  .pg-pips {
+    display: none;
+  }
+}
+@media (min-width: 1600px) {
+}
+@media (max-width: 600px) {
+  .contact {
+    padding: 1rem 2rem;
+    padding-top: 4rem;
+  }
+  .contact h2 {
+    font-size: 1.2rem;
+  }
+  .contactForm {
+    width: 100%;
+    padding: 1rem;
+  }
+  textarea {
+    height: 5rem;
+  }
+  .contact ul {
+    width: 100%;
+  }
+  .pg-pips {
+    display: none;
+  }
+}
+/* Contact Phone End*/

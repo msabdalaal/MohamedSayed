@@ -1,0 +1,69 @@
+:root {
+  --black: #1d201f;
+  --blue: #2978a0;
+  --white: white;
+}
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  transition: all ease-in-out 0.3s;
+  background-color: var(--black);
+  background-image: url(../assets/Background-Logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.home img {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.home .text {
+  color: var(--white);
+  font-weight: light;
+  line-height: 2;
+}
+.home .text h2 {
+  font-weight: 300;
+}
+.home .text span {
+  color: #49a9d9;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.home a {
+  color: var(--white);
+  padding: 1rem;
+  border: 0.1rem solid #49a9d9;
+  border-radius: 0.4rem;
+  transition: all ease-in 0.2s;
+}
+.home a:hover {
+  background-color: var(--white);
+  border: 0.1rem solid var(--white);
+
+  color: var(--black);
+  border-radius: 0.4rem;
+}
+/* Home End */
+/* Home Phone Start */
+@media (max-width: 600px) {
+  .home {
+    padding: 0rem 2rem;
+  }
+  .home {
+    background-image: url("../assets/Home-bg-Mobile.png");
+  }
+}
+
+/* Home Phone End */
