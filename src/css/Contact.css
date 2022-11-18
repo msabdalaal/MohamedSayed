@@ -110,6 +110,24 @@ button:hover {
 .contact ul li a:hover svg {
   color: var(--blue);
 }
+.thanks {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--black);
+  color: var(--white);
+  padding: 5rem;
+  box-shadow: 0px 10px 0px 100vw rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.3s;
+}
+.thanks .text {
+  margin-bottom: 2rem;
+}
+.showThanks {
+  opacity: 1;
+}
 /* Contact End*/
 /* Contact Phone Start*/
 @media (max-width: 1400px) {
@@ -150,6 +168,10 @@ button:hover {
   }
   .pg-pips {
     display: none;
+  }
+  .thanks {
+    padding: 2rem;
+    width: 19rem;
   }
 }
 /* Contact Phone End*/
