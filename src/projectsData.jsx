@@ -1,8 +1,9 @@
+import image1 from "./assets/Work-5.png";
 export default [
   {
     id: 0,
     title: "Quizzical",
-    image: "../src/assets/Work-5.png",
+    image: { image1 },
     description: "Trivia Quizz Game",
     url: "https://msabdalaal.github.io/Quizzical/",
     github: "https://github.com/msabdalaal/Quizzical",
