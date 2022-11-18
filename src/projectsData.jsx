@@ -1,9 +1,8 @@
-import image1 from "./assets/Work-5.png";
 export default [
   {
     id: 0,
     title: "Quizzical",
-    image: { image1 },
+    image: "/public/Work-5.png",
     description: "Trivia Quizz Game",
     url: "https://msabdalaal.github.io/Quizzical/",
     github: "https://github.com/msabdalaal/Quizzical",
@@ -12,7 +11,7 @@ export default [
   {
     id: 1,
     title: "ToDo",
-    image: "../src/assets/Work-1.png",
+    image: "/public/Work-1.png",
     description: "Todo List App",
     url: "https://msabdalaal.github.io/todo-app/",
     github: "https://github.com/msabdalaal/todo-app",
@@ -21,7 +20,7 @@ export default [
   {
     id: 2,
     title: "Tenzies Game",
-    image: "../src/assets/Work-8.png",
+    image: "/public/Work-8.png",
     description: "Tenzies Game With Cool Winning Animation",
     url: "https://msabdalaal.github.io/TenziesGameReact/",
     github: "https://github.com/msabdalaal/TenziesGameReact",
@@ -30,7 +29,7 @@ export default [
   {
     id: 3,
     title: "Rock Paper Scissors",
-    image: "../src/assets/Work-3.png",
+    image: "/public/Work-3.png",
     description: "Rock Paper Scissors Fun Game",
     url: "https://msabdalaal.github.io/rock-paper-scissors-master/",
     github: "https://github.com/msabdalaal/rock-paper-scissors-master",
@@ -39,7 +38,7 @@ export default [
   {
     id: 4,
     title: "Meme Generator",
-    image: "../src/assets/Work-7.png",
+    image: "/public/Work-7.png",
     description: "Meme Generator App With Adding Text",
     url: "https://msabdalaal.github.io/MemeGeneratorReact/",
     github: "https://github.com/msabdalaal/MemeGeneratorReact",
@@ -48,7 +47,7 @@ export default [
   {
     id: 5,
     title: "Calculator",
-    image: "../src/assets/Work-2.png",
+    image: "/public/Work-2.png",
     description: "Multitheme calculator App",
     url: "https://msabdalaal.github.io/calculator-app/",
     github: "https://github.com/msabdalaal/calculator-app",
@@ -57,7 +56,7 @@ export default [
   {
     id: 6,
     title: "Interactive Card",
-    image: "../src/assets/Work-6.png",
+    image: "/public/Work-6.png",
     description: "Interactive Card Info Form",
     url: "https://msabdalaal.github.io//InteractiveInfoForm/",
     github: "https://github.com/msabdalaal/InteractiveInfoForm",
@@ -66,7 +65,7 @@ export default [
   {
     id: 7,
     title: "Product Page",
-    image: "../src/assets/Work-4.png",
+    image: "/public/Work-4.png",
     description: "Ecommerce Online Shop Iteractive Page",
     url: "https://msabdalaal.github.io/Ecommerce-Product-Page/",
     github: "https://github.com/msabdalaal/Ecommerce-Product-Page",
