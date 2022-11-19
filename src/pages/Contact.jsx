@@ -36,6 +36,23 @@ export default function Contact({ visibleSection }) {
       alert(`please fill all fiellds`);
     }
   }
+  function TanksMessage() {
+    if (showThanksMessage) {
+      return (
+        <div className={`thanks`}>
+          <div className="text">
+            <h2>
+              <span>Thanks For Sending An Email</span>
+            </h2>
+            <h2>I'll Respond To You ASAP</h2>
+          </div>
+          <button onClick={() => setShowThanksMessage(true)} type="submit">
+            OK
+          </button>
+        </div>
+      );
+    }
+  }
   return (
     <div id="contact" className="section contact">
       <h1>&lt;CONTACT_ME/&gt;</h1>
@@ -82,17 +99,7 @@ export default function Contact({ visibleSection }) {
             rows="10"
             required
           ></textarea>
-          <div className={`thanks ${showThanksMessage && "showThanks"}`}>
-            <div className="text">
-              <h2>
-                <span>Thanks For Sending An Email</span>
-              </h2>
-              <h2>I'll Respond To You ASAP</h2>
-            </div>
-            <button onClick={() => setShowThanksMessage(true)} type="submit">
-              OK
-            </button>
-          </div>
+          <TanksMessage />
           <button onClick={validateForm} type="button">
             Send Message
           </button>
