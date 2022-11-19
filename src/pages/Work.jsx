@@ -4,14 +4,14 @@ import "../css/Work.css";
 import projectsData from "../projectsData.jsx";
 import { Fade } from "react-awesome-reveal";
 
-
-
 export default function Work() {
   let projects = projectsData.map((project) => {
     return (
-      <Fade direction={`${project.id % 2 == 0 ? "right" : "left"}`}>
+      <Fade
+        key={project.id}
+        direction={`${project.id % 2 == 0 ? "right" : "left"}`}
+      >
         <div
-          key={project.id}
           id={project.id}
           className={`project`}
           onClick={() => window.open(project.url)}

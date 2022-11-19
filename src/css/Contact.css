@@ -15,6 +15,7 @@
   text-align: center;
   transition: all ease-in-out 0.3s;
   padding: 4rem;
+  min-height: 100vh;
 }
 .contact h1 {
   margin: 0;
@@ -37,6 +38,7 @@
   aspect-ratio: 3/2;
   transition: 0.3s;
   margin-inline: auto;
+  height: 100%;
 }
 .contactForm form {
   display: flex;
@@ -44,7 +46,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100%;
   padding: 1rem;
   gap: 2rem;
 }
@@ -160,9 +161,6 @@ button:hover {
   }
   .contact ul {
     width: 100%;
-  }
-  .pg-pips {
-    display: none;
   }
   .thanks {
     padding: 2rem;
