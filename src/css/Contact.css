@@ -9,7 +9,6 @@
   background-color: var(--white);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: column;
   gap: 2rem;
   padding-bottom: 1rem;
@@ -36,11 +35,8 @@
   padding: 3rem;
   width: 70% !important;
   aspect-ratio: 3/2;
-  scale: 0;
   transition: 0.3s;
-}
-.contactForm.showContact {
-  scale: 1;
+  margin-inline: auto;
 }
 .contactForm form {
   display: flex;
@@ -97,6 +93,7 @@ button:hover {
   z-index: 1;
   transition: all ease-in 0.2s;
   width: 70% !important;
+  margin-inline: auto;
 }
 .contact ul li a {
   width: 100%;

@@ -2,52 +2,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../css/Work.css";
 import projectsData from "../projectsData.jsx";
-export default function Work({ visibleSection }) {
+import { Fade } from "react-awesome-reveal";
+
+
+
+export default function Work() {
   let projects = projectsData.map((project) => {
     return (
-      <div
-        key={project.id}
-        id={project.id}
-        className={`project ${project.id % 2 == 0 ? "right" : "left"}`}
-        onClick={() => window.open(project.url)}
-        style={{ backgroundImage: `url(${project.image})` }}
-      >
-        <div className={`heading ${project.bright && "bright"}`}>
-          <div className="text">
-            <h1>{project.title}</h1>
-            <p>{project.description}</p>
+      <Fade direction={`${project.id % 2 == 0 ? "right" : "left"}`}>
+        <div
+          key={project.id}
+          id={project.id}
+          className={`project`}
+          onClick={() => window.open(project.url)}
+          style={{ backgroundImage: `url(${project.image})` }}
+        >
+          <div className={`heading ${project.bright && "bright"}`}>
+            <div className="text">
+              <h1>{project.title}</h1>
+              <p>{project.description}</p>
+            </div>
+            <a
+              href={project.github}
+              target="_blank"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            </a>
           </div>
-          <a
-            href={project.github}
-            target="_blank"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-          </a>
         </div>
-      </div>
+      </Fade>
     );
   });
-
-  let projectsElements = document.querySelectorAll(".project");
-  // window.onscroll = () => {
-  //   projectsElements.forEach((project) => {
-  //     if (project.getBoundingClientRect().top < window.innerHeight - 250) {
-  //       project.classList.add("visible");
-  //     } else if (project.getBoundingClientRect().top > -100) {
-  //       project.classList.remove("visible");
-  //     }
-  //   });
-  // };
-  document.body.onscroll = () => {
-    projectsElements.forEach((project) => {
-      if (project.getBoundingClientRect().top < window.innerHeight - window.innerHeight /4 ) {
-        project.classList.add("visible");
-      } else if (project.getBoundingClientRect().top > -100) {
-        project.classList.remove("visible");
-      }
-    });
-  };
 
   return (
     <div id="work" className="section work">

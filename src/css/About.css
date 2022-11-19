@@ -36,7 +36,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  transform: translateX(-200%);
+  /* transform: translateX(-200%); */
   transition: 0.3s;
 }
 .about h2 {
@@ -53,7 +53,7 @@
 .Mobile {
   display: none;
 }
-.about .container img {
+.about img {
   width: 100%;
   aspect-ratio: 2/3;
   object-fit: cover;
@@ -63,20 +63,20 @@
   box-shadow: 0.5rem 0.4rem 0.6rem -0.1rem rgba(0, 0, 0, 0.25);
   transition: all ease-in 0.2s;
 }
-.about .container .personalImage img:hover {
+.personalImage img:hover {
   scale: 1.05;
   box-shadow: none;
 }
-.visible {
+/* .visible {
   transform: translateX(0) !important;
-}
+} */
 .personalImage {
   transition: all ease-in 0.3s;
-  transform: translateX(200%);
+  /* transform: translateX(200%); */
   width: fit-content;
   display: flex;
   justify-content: center;
-  align-items: center;
+
   flex-direction: column;
   margin-bottom: 2rem;
 }

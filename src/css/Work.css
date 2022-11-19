@@ -21,7 +21,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   position: relative;
 }
 .projectsContainer .project {
@@ -40,6 +39,7 @@
   background-size: cover;
   margin-bottom: 1rem;
   margin-top: 3rem;
+  margin-inline: auto;
 }
 .projectsContainer .project .heading {
   position: absolute;

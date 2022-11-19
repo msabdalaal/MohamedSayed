@@ -7,8 +7,9 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/Contact.css";
 import { useState } from "react";
-import { faL } from "@fortawesome/free-solid-svg-icons";
-export default function Contact({ visibleSection }) {
+import { Fade } from "react-awesome-reveal";
+
+export default function Contact() {
   let [showThanksMessage, setShowThanksMessage] = useState(false);
   let [formData, setFormData] = useState({
     name: "",
@@ -57,54 +58,51 @@ export default function Contact({ visibleSection }) {
     <div id="contact" className="section contact">
       <h1>&lt;CONTACT_ME/&gt;</h1>
       <h2>I'm excited to learn about your project. Ready to get started?</h2>
-      <div
-        className={`contactForm ${
-          visibleSection == "contact" && "showContact"
-        }`}
-        id="contactFrom"
-      >
-        <form
-          action="https://formsubmit.co/edfc276360cae2a8feb9e48cff7f0b5a"
-          method="POST"
-        >
-          <input type="hidden" name="_subject" value="New Message" />
-          <input
-            type="hidden"
-            name="_next"
-            value="https://msabdalaal.github.io/MohamedSayed/#contact"
-          />
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            onChange={(e) => handleChange(e)}
-            type="text"
-            placeholder="Your Name"
-            name="name"
-            value={formData.name}
-            required
-          />
-          <input
-            onChange={(e) => handleChange(e)}
-            type="email"
-            placeholder="Your Email"
-            name="email"
-            value={formData.email}
-            required
-          />
-          <textarea
-            onChange={(e) => handleChange(e)}
-            placeholder="Your Message"
-            className="form-control"
-            name="message"
-            value={formData.message}
-            rows="10"
-            required
-          ></textarea>
-          <TanksMessage />
-          <button onClick={validateForm} type="button">
-            Send Message
-          </button>
-        </form>
-      </div>
+      <Fade>
+        <div className={`contactForm`} id="contactFrom">
+          <form
+            action="https://formsubmit.co/edfc276360cae2a8feb9e48cff7f0b5a"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New Message" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://msabdalaal.github.io/MohamedSayed/#contact"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              onChange={(e) => handleChange(e)}
+              type="text"
+              placeholder="Your Name"
+              name="name"
+              value={formData.name}
+              required
+            />
+            <input
+              onChange={(e) => handleChange(e)}
+              type="email"
+              placeholder="Your Email"
+              name="email"
+              value={formData.email}
+              required
+            />
+            <textarea
+              onChange={(e) => handleChange(e)}
+              placeholder="Your Message"
+              className="form-control"
+              name="message"
+              value={formData.message}
+              rows="10"
+              required
+            ></textarea>
+            <TanksMessage />
+            <button onClick={validateForm} type="button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </Fade>
       <ul>
         <li>
           <a href="https://www.facebook.com/msabdalaal/" target="_blank">

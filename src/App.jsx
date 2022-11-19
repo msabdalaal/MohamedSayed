@@ -40,36 +40,36 @@ function App() {
       }
     });
   });
-  window.addEventListener("touchmove", () => {
-    let home = document.getElementById("home");
-    let about = document.getElementById("about");
-    let work = document.getElementById("work");
-    let contact = document.getElementById("contact");
-    if (
-      home.getBoundingClientRect().top <
-      window.innerHeight - window.innerHeight / 4
-    ) {
-      setVisibleSection("home");
-    }
-    if (
-      about.getBoundingClientRect().top <
-      window.innerHeight - window.innerHeight / 4
-    ) {
-      setVisibleSection("about");
-    }
-    if (
-      work.getBoundingClientRect().top <
-      window.innerHeight - window.innerHeight / 4
-    ) {
-      setVisibleSection("work");
-    }
-    if (
-      contact.getBoundingClientRect().top <
-      window.innerHeight - window.innerHeight / 4
-    ) {
-      setVisibleSection("contact");
-    }
-  });
+  // window.addEventListener("touchmove", () => {
+  //   let home = document.getElementById("home");
+  //   let about = document.getElementById("about");
+  //   let work = document.getElementById("work");
+  //   let contact = document.getElementById("contact");
+  //   if (
+  //     home.getBoundingClientRect().top <
+  //     window.innerHeight - window.innerHeight / 4
+  //   ) {
+  //     setVisibleSection("home");
+  //   }
+  //   if (
+  //     about.getBoundingClientRect().top <
+  //     window.innerHeight - window.innerHeight / 4
+  //   ) {
+  //     setVisibleSection("about");
+  //   }
+  //   if (
+  //     work.getBoundingClientRect().top <
+  //     window.innerHeight - window.innerHeight / 4
+  //   ) {
+  //     setVisibleSection("work");
+  //   }
+  //   if (
+  //     contact.getBoundingClientRect().top <
+  //     window.innerHeight - window.innerHeight / 4
+  //   ) {
+  //     setVisibleSection("contact");
+  //   }
+  // });
   document.body.addEventListener("touchmove", () => {
     let home = document.getElementById("home");
     let about = document.getElementById("about");
