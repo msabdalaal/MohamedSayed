@@ -26,7 +26,12 @@ export default function NavBar({ visibleSection }) {
         <FontAwesomeIcon icon={faArrowDown} className="hide"></FontAwesomeIcon>
       </div> */}
       <ul>
-        <li onDragEnd={handleDrag} draggable="true" className="drag">
+        <li
+          onDragEnd={handleDrag}
+          onDrag={handleDrag}
+          draggable="true"
+          className="drag"
+        >
           <FontAwesomeIcon icon={faUpDownLeftRight}></FontAwesomeIcon>
         </li>
         <li>
