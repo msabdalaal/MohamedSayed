@@ -108,8 +108,8 @@ a.active {
   nav {
     height: 4rem;
     width: 100%;
-    top: 0;
-    left: 0;
+    top: 0 !important;
+    left: 0 !important;
     border-radius: 0;
     flex-direction: row;
     padding-top: 0;
@@ -158,11 +158,14 @@ a.active {
     align-items: center;
     margin-bottom: 0.3rem;
   }
-  nav ul li:nth-child(4) a {
+  nav ul li:nth-child(5) a {
     border-radius: 0;
   }
   nav ul li:nth-child(1) a {
     border-radius: 0;
+  }
+  .drag {
+    display: none !important;
   }
 }
 /* Nav Phone End */
