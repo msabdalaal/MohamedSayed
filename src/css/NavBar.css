@@ -176,6 +176,9 @@ a.active {
   cursor: move;
   -webkit-user-drag: element;
 }
+.drag::selection {
+  cursor: move !important;
+}
 .drag svg {
   pointer-events: none;
 }

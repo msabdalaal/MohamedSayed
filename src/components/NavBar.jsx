@@ -27,9 +27,9 @@ export default function NavBar({ visibleSection }) {
       </div> */}
       <ul>
         <li
-          onDragEnd={handleDrag}
+          onMouseDown={handleDrag}
           onDrag={handleDrag}
-          draggable="true"
+          onDragEnd={handleDrag}
           className="drag"
         >
           <FontAwesomeIcon icon={faUpDownLeftRight}></FontAwesomeIcon>
