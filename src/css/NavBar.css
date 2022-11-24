@@ -104,7 +104,7 @@ a.active {
 }
 /* Nav End */
 /* Nav Phone Start */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   nav {
     height: 4rem;
     width: 100%;

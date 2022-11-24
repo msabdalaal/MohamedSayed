@@ -160,7 +160,7 @@ button:hover {
     height: 5rem;
   }
   .contact ul {
-    width: 100%;
+    width: 100% !important;
   }
   .thanks {
     padding: 2rem;
