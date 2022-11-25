@@ -4,6 +4,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { Fade } from "react-awesome-reveal";
 export default function About({ visibleSection }) {
+  function makeDiv(id) {
+    let element = document.getElementById(id);
+
+    element.prepend(
+      <>
+        <div className="hello">Hello</div>
+      </>
+    );
+  }
+  function makeDiv(id) {
+    let element = document.getElementById(id);
+
+    element.children[0].remove();
+  }
   return (
     <div id="about" className="section about">
       <h1>&lt;ABOUT_ME/&gt;</h1>
@@ -26,17 +40,22 @@ export default function About({ visibleSection }) {
           </div>
         </Fade>
 
-        <div className={`personalImage`}>
+        <div
+          onMouseEnter={(e) => makeDiv(e.target.id)}
+          onMouseLeave={(e) => deleteDiv(e.target.id)}
+          id="image"
+          className={`personalImage`}
+        >
           <Fade direction="right">
             <img src={myPic} alt="My Personal Picture"></img>
           </Fade>
           <Fade direction="right">
-          <a
-            href="/MohamedSayed/Mohamed_sayed_Resume.pdf"
-            download="Mohamed_sayed_Resume"
-          >
-            <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download CV
-          </a>
+            <a
+              href="/MohamedSayed/Mohamed_sayed_Resume.pdf"
+              download="Mohamed_sayed_Resume"
+            >
+              <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download CV
+            </a>
           </Fade>
         </div>
       </div>
