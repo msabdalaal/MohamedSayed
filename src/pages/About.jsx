@@ -4,20 +4,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { Fade } from "react-awesome-reveal";
 export default function About({ visibleSection }) {
-  function makeDiv(id) {
-    let element = document.getElementById(id);
-
-    element.prepend(
-      <>
-        <div className="hello">Hello</div>
-      </>
-    );
-  }
-  function makeDiv(id) {
-    let element = document.getElementById(id);
-
-    element.children[0].remove();
-  }
+  // function makeDiv(id) {
+  //   let element = document.getElementById(id).parentElement;
+  //   console.log(id);
+  //   let newElemnet = document.createElement("div");
+  //   newElemnet.className = "hello";
+  //   newElemnet.textContent = "hello";
+  //   element.append(newElemnet);
+  // }
+  // function deleteDiv(id) {
+  //   let element = document.getElementById(id).nextSibling;
+  //   element.remove();
+  // }
   return (
     <div id="about" className="section about">
       <h1>&lt;ABOUT_ME/&gt;</h1>
@@ -40,14 +38,15 @@ export default function About({ visibleSection }) {
           </div>
         </Fade>
 
-        <div
-          onMouseEnter={(e) => makeDiv(e.target.id)}
-          onMouseLeave={(e) => deleteDiv(e.target.id)}
-          id="image"
-          className={`personalImage`}
-        >
+        <div className={`personalImage`}>
           <Fade direction="right">
-            <img src={myPic} alt="My Personal Picture"></img>
+            <img
+              src={myPic}
+              // onMouseEnter={(e) => makeDiv(e.target.id)}
+              // onMouseLeave={(e) => deleteDiv(e.target.id)}
+              // id="image"
+              alt="My Personal Picture"
+            ></img>
           </Fade>
           <Fade direction="right">
             <a
