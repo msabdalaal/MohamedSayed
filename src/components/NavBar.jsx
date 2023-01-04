@@ -10,8 +10,8 @@ import "../css/NavBar.css";
 import React, { useState } from "react";
 export default function NavBar({ visibleSection }) {
   let [postion, setPostion] = useState({
-    x: "94%",
-    y: "30%",
+    x: "2vw",
+    y: "35vh",
   });
   function handleDrag(e) {
     setPostion({

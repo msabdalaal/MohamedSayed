@@ -1,8 +1,10 @@
 import "../css/Home.css";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { Fade} from "react-awesome-reveal";
+import HeroImage from "../assets/HeroImage.png";
 export default function Home() {
   return (
     <div id="home" className="section home">
+      <img src={HeroImage} alt="Hero Image" />
       <Fade direction="down">
         <div className="text">
           <h2>

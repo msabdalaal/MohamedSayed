@@ -10,12 +10,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
   gap: 3rem;
   transition: all ease-in-out 0.3s;
   background-color: var(--black);
-  background-image: url(../assets/Background-Logo.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -23,15 +22,17 @@
 .home img {
   position: absolute;
   height: 100vh;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
+  right: 0;
   z-index: 1;
+  /* filter: grayscale(); */
 }
 .home .text {
+  margin-left: 12rem;
   color: var(--white);
   font-weight: light;
   line-height: 2;
+  text-align: left;
 }
 .home .text h2 {
   font-weight: 300;
@@ -42,6 +43,7 @@
   font-size: 1.6rem;
 }
 .home a {
+  margin-left: 12rem;
   color: var(--white);
   padding: 1rem;
   border: 0.1rem solid #49a9d9;
@@ -57,12 +59,23 @@
 }
 /* Home End */
 /* Home Phone Start */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   .home {
     padding: 0rem 2rem;
+    align-items: center;
   }
-  .home {
-    background-image: url("../assets/Home-bg-Mobile.png");
+  .home img {
+    display: none;
+  }
+  .home .text {
+    margin-left: 0;
+    color: var(--white);
+    font-weight: light;
+    line-height: 2;
+    text-align: center;
+  }
+  .home a {
+    margin-left: 0;
   }
 }
 
