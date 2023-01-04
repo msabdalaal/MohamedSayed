@@ -15,7 +15,7 @@ export default function Work() {
           id={project.id}
           className={`project`}
           onClick={() => window.open(project.url)}
-          style={{ backgroundImage: `url(${project.image})` }}
+          style={{ backgroundImage: `url(/MohamedSayed/${project.image})` }}
         >
           <div className={`heading ${project.bright && "bright"}`}>
             <div className="text">
