@@ -51,7 +51,7 @@ export default function About({ visibleSection }) {
           <Fade direction="right">
             <a
               href="/MohamedSayed/Mohamed_sayed_CV.pdf"
-              download="Mohamed_sayed_Resume"
+              download="Mohamed_sayed_Resume.pdf"
             >
               <FontAwesomeIcon icon={faDownload}></FontAwesomeIcon> Download CV
             </a>
