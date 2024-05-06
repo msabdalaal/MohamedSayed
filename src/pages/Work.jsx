@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "../css/Work.css";
-import projectsData from "../projectsData";
+import projectsData from "../projectsData.js";
 import { Fade } from "react-awesome-reveal";
 
 export default function Work() {
