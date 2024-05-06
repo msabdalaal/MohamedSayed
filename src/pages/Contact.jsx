@@ -4,6 +4,7 @@ import {
   faWhatsapp,
   faGithub,
   faCodepen,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "../css/Contact.css";
 import { useState } from "react";
@@ -105,8 +106,8 @@ export default function Contact() {
       </Fade>
       <ul>
         <li>
-          <a href="https://www.facebook.com/msabdalaal/" target="_blank">
-            <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+          <a href="https://www.linkedin.com/in/mohamed-sayed-abdalaal/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
           </a>
         </li>
         <li>
