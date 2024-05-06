@@ -34,7 +34,6 @@ export default function Work() {
       </Fade>
     );
   });
-
   return (
     <div id="work" className="section work">
       <h1>&lt;MY_WORK/&gt;</h1>
