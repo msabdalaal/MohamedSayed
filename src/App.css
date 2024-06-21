@@ -19,7 +19,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   list-style-type: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Courier Prime", monospace;
 }
 ::-webkit-scrollbar {
   width: 0rem;
@@ -32,9 +32,6 @@
 }
 a:hover {
   cursor: pointer;
-}
-.section {
-  padding-top: 4rem !important ;
 }
 body {
   overflow-x: hidden;

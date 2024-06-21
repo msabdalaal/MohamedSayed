@@ -1,5 +1,5 @@
 :root {
-  --black: #1d201f;
+  --black: #171717;
   --blue: #2978a0;
   --white: white;
 }
@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow-x: hidden;
+  padding-top: 4rem;
 }
 .work h1 {
   text-align: center;

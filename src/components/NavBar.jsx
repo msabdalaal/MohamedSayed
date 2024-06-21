@@ -1,39 +1,21 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faIdCard,
-  faBriefcase,
-  faMessage,
-  faUpDownLeftRight,
-} from "@fortawesome/free-solid-svg-icons";
+
 import logo from "../assets/Nav-Logo-White.png";
 import "../css/NavBar.css";
 import React, { useState } from "react";
 export default function NavBar({ visibleSection }) {
-  let [postion, setPostion] = useState({
-    x: "2vw",
-    y: "35vh",
-  });
-  function handleDrag(e) {
-    setPostion({
-      x: e.clientX - 30,
-      y: e.clientY - 30,
-    });
-  }
+  // let [postion, setPostion] = useState({
+  //   x: "2vw",
+  //   y: "35vh",
+  // });
+  // function handleDrag(e) {
+  //   setPostion({
+  //     x: e.clientX - 30,
+  //     y: e.clientY - 30,
+  //   });
+  // }
   return (
-    <nav style={{ left: postion.x, top: postion.y }}>
-      {/* <div className="closeNav">
-        <FontAwesomeIcon icon={faArrowUp}></FontAwesomeIcon>
-        <FontAwesomeIcon icon={faArrowDown} className="hide"></FontAwesomeIcon>
-      </div> */}
+    <nav>
       <ul>
-        <li
-          onMouseDown={handleDrag}
-          onDrag={handleDrag}
-          onDragEnd={handleDrag}
-          className="drag"
-        >
-          <FontAwesomeIcon icon={faUpDownLeftRight}></FontAwesomeIcon>
-        </li>
         <li>
           <a href="#home" className={`${visibleSection == "home" && "active"}`}>
             <img src={logo} alt="Logo" />
@@ -41,15 +23,23 @@ export default function NavBar({ visibleSection }) {
         </li>
         <li>
           <a
+            href="#home"
+            className={`${visibleSection == "home" && "active"}`}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
             href="#about"
             className={`${visibleSection == "about" && "active"}`}
           >
-            <FontAwesomeIcon icon={faIdCard}></FontAwesomeIcon>
+            About
           </a>
         </li>
         <li>
           <a href="#work" className={`${visibleSection == "work" && "active"}`}>
-            <FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>
+            Work
           </a>
         </li>
         <li>
@@ -57,7 +47,7 @@ export default function NavBar({ visibleSection }) {
             href="#contact"
             className={`${visibleSection == "contact" && "active"}`}
           >
-            <FontAwesomeIcon icon={faMessage}></FontAwesomeIcon>
+            Contact
           </a>
         </li>
       </ul>

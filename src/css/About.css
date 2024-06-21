@@ -1,5 +1,5 @@
 :root {
-  --black: #1d201f;
+  --black: #171717;
   --blue: #2978a0;
   --white: white;
 }
@@ -73,7 +73,7 @@
 .personalImage {
   transition: all ease-in 0.3s;
   /* transform: translateX(200%); */
-  width: fit-content;
+  width: 100%;
   display: flex;
   justify-content: center;
 

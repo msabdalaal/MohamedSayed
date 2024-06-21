@@ -1,21 +1,21 @@
 import "../css/Home.css";
-import { Fade} from "react-awesome-reveal";
 import HeroImage from "../assets/HeroImage.png";
+import { useEffect, useState } from "react";
+import TypingEffect from "../Functions/TypingEffect";
 export default function Home() {
   return (
     <div id="home" className="section home">
       <img src={HeroImage} alt="Hero Image" />
-      <Fade direction="down">
         <div className="text">
           <h2>
-            Hello, I'm <span>&lt;Mohamed_Sayed/&gt;</span>
+          {<TypingEffect text="Hii, My name is"/>}|
           </h2>
-          <h2>I'm Front-End Web Develober</h2>
+          <h1>{<TypingEffect text="Moohamed Sayed"/>}|</h1>
         </div>
-      </Fade>
-      <Fade direction="up">
-        <a href="#about">Who Am I .. ?!</a>
-      </Fade>
+        <div className="links">
+        <a className="solid" href="#about">{<TypingEffect text="Abbout Me"/>}</a>
+        <a href="#about">{<TypingEffect text="Coontact Me"/>}</a>
+        </div>
     </div>
   );
 }

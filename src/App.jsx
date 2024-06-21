@@ -61,7 +61,7 @@ function App() {
   return (
     <main>
       <NavBar visibleSection={visibleSection} />
-      <Home />
+      <Home/>
       <About visibleSection={visibleSection} />
       <Work visibleSection={visibleSection} />
       <Contact visibleSection={visibleSection} />
