@@ -95,7 +95,7 @@ export default [
     title: "Netflix Clone",
     image: "/Work-11.png",
     description: "A Responsive clone for Netflix Website",
-    url: "https://netflix-msabdalaal.netlify.app",
+    url: "https://msfakeflix.netlify.app/",
     github: "https://github.com/msabdalaal/Netflix-Clone",
     bright: true,
   },
