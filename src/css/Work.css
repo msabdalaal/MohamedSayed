@@ -9,7 +9,6 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow-x: hidden;
-  padding-top: 4rem;
 }
 .work h1 {
   text-align: center;
@@ -18,18 +17,16 @@
   color: var(--white);
 }
 .projectsContainer {
-  padding: 2rem 1rem;
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
+  align-items: center;
   position: relative;
+  gap: 4rem;
 }
 .projectsContainer .project {
-  width: 60%;
+  width: 80vw;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
   border-radius: 0.5rem;
   background-repeat: no-repeat;
@@ -38,9 +35,6 @@
   background-position-y: top;
   background-position-x: center;
   background-size: cover;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  margin-inline: auto;
 }
 .projectsContainer .project .heading {
   position: absolute;
@@ -66,10 +60,8 @@
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  width: 50%;
 }
 .projectsContainer .project .heading h1 {
-  float: left;
   text-align: left;
 }
 .projectsContainer .project .heading p {
@@ -120,7 +112,6 @@
   }
   .projectsContainer .project .heading p {
     font-size: 0.8rem;
-    white-space: nowrap;
   }
   .projectsContainer .project .heading svg {
     height: 2.5rem;

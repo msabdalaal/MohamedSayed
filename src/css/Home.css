@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
   text-align: center;
   gap: 3rem;
   transition: all ease-in-out 0.3s;
@@ -18,7 +17,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding-left: 8rem;
 }
 .home img {
   position: absolute;
@@ -31,29 +29,22 @@
 .home .text {
   color: var(--white);
   font-weight: light;
-  text-align: left;
 }
 .home .text h2 {
   font-weight: 300;
-  font-size: 32px;
   margin-bottom: 1rem;
 }
 .home .text h1 {
   font-weight: 300;
-  font-size: 60px;
 }
 .home .links {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 10px;
 }
 .home a {
   color: var(--white);
-  padding: 1.2rem 4rem;
   border: 0.2rem solid white;
   border-radius: 1.5rem;
-  font-size: 20px;
   transition: all ease-in 0.2s;
 }
 .home a.solid {
@@ -66,24 +57,4 @@
 }
 /* Home End */
 /* Home Phone Start */
-@media (max-width: 1024px) {
-  .home {
-    padding: 0rem 2rem;
-    align-items: center;
-  }
-  .home img {
-    display: none;
-  }
-  .home .text {
-    margin-left: 0;
-    color: var(--white);
-    font-weight: light;
-    line-height: 2;
-    text-align: center;
-  }
-  .home a {
-    margin-left: 0;
-  }
-}
-
 /* Home Phone End */

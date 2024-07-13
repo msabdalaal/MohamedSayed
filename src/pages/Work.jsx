@@ -35,9 +35,9 @@ export default function Work() {
     );
   });
   return (
-    <div id="work" className="section work">
-      <h1>&lt;MY_WORK/&gt;</h1>
-      <div className="projectsContainer">{projects}</div>
+    <div id="work" className="section work flex justify-center items-center flex-col py-16">
+      <h1 className="text-4xl text-center pb-8">&lt;MY_WORK/&gt;</h1>
+      <div className="projectsContainer container">{projects}</div>
     </div>
   );
 }

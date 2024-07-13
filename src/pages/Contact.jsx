@@ -56,14 +56,17 @@ export default function Contact() {
     }
   }
   return (
-    <div id="contact" className="section contact">
-      <h1>&lt;CONTACT_ME/&gt;</h1>
-      <h2>I'm excited to learn about your project. Ready to get started?</h2>
+    <div id="contact" className="section contact py-16 px-20">
+      <h1 className="text-center pb-8 text-4xl">&lt;CONTACT_ME/&gt;</h1>
+      <h2 className="text-2xl text-center">
+        I'm excited to learn about your project. Ready to get started?
+      </h2>
       <Fade>
         <div className={`contactForm`} id="contactFrom">
           <form
             action="https://formsubmit.co/edfc276360cae2a8feb9e48cff7f0b5a"
             method="POST"
+            className="p-6"
           >
             <input type="hidden" name="_subject" value="New Message" />
             <input
@@ -106,7 +109,10 @@ export default function Contact() {
       </Fade>
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/mohamed-sayed-abdalaal/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/mohamed-sayed-abdalaal/"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
           </a>
         </li>

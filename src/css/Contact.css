@@ -5,49 +5,29 @@
 }
 /* Contact Start*/
 .contact {
-  position: relative;
   background-color: var(--white);
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  gap: 2rem;
-  padding-bottom: 1rem;
-  text-align: center;
   transition: all ease-in-out 0.3s;
-  padding: 4rem;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+gap: 2rem;
 }
 .contact h1 {
-  margin: 0;
-  margin-top: 1rem;
   font-weight: 500;
 }
 .contact h2 {
   font-weight: 400;
 }
 .contactForm {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   background-color: var(--blue);
-  z-index: 2;
   border-radius: 0.3rem;
-  padding: 3rem;
-  width: 70% !important;
-  aspect-ratio: 3/2;
   transition: 0.3s;
-  margin-inline: auto;
-  height: 100%;
 }
 .contactForm form {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 1rem;
   gap: 2rem;
+  /* z-index: 1; */
 }
 .contactForm form input,
 textarea,
@@ -55,16 +35,11 @@ button {
   width: 100%;
   border: none;
   border-radius: 0.3rem;
-  font-size: 1.2rem;
 }
 .contactForm form input,
-button {
-  height: 3.5rem;
-  padding-left: 1rem;
-}
+button,
 textarea {
-  padding: 1rem;
-  height: 12rem !important;
+  padding: 0.5rem !important;
 }
 input:focus {
   outline-width: 0;
@@ -76,15 +51,17 @@ textarea:focus {
 }
 button {
   background-color: var(--blue);
+  color: white !important;
   border: 0.1rem solid var(--white);
   color: var(--white);
   transition: all ease-in 0.2s;
+  height: 3.5rem;
 }
 button:hover {
   cursor: pointer;
   background-color: var(--white);
   border: 0.1rem solid var(--white);
-  color: var(--black);
+  color: var(--black) !important;
 }
 .contact ul {
   display: flex;
@@ -121,50 +98,3 @@ button:hover {
 .thanks .text {
   margin-bottom: 2rem;
 }
-/* .showThanks {
-  transform: scale(1);
-} */
-/* Contact End*/
-/* Contact Phone Start*/
-@media (max-width: 1400px) {
-  .contact h2 {
-    font-size: 1.2rem;
-  }
-  .contactForm {
-    width: 100%;
-    padding: 1rem;
-  }
-  textarea {
-    height: 5rem;
-  }
-  .contact ul {
-    width: 100%;
-  }
-  .pg-pips {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .contact {
-    padding: 1rem 2rem;
-    padding-top: 4rem;
-  }
-  .contact h2 {
-    font-size: 1.2rem;
-  }
-  .contactForm {
-    width: 100% !important;
-    padding: 1rem;
-  }
-  textarea {
-    height: 5rem;
-  }
-  .contact ul {
-    width: 100% !important;
-  }
-  .thanks {
-    padding: 2rem;
-    width: 19rem;
-  }
-}
-/* Contact Phone End*/
