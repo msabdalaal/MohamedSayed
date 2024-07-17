@@ -1,6 +1,7 @@
 import "../css/Home.css";
 import HeroImage from "../assets/HeroImage.png";
 import TypingEffect from "../Functions/TypingEffect";
+import { useState, useEffect } from "react";
 export default function Home() {
   const [text, setText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -47,22 +48,20 @@ export default function Home() {
           {text}
           <span className="cursor"></span>|
         </h2>
-        <h1 className="text-4xl lg:text-6xl">
-          {<TypingEffect text="Moohamed Sayed" />}|
-        </h1>
+        <h1 className="text-4xl lg:text-6xl"></h1>
       </div>
       <div className="links justify-center xl:justify-start">
         <a
           className="solid px-6 py-6 lg:text-2xl flex justify-center items-center"
           href="#about"
         >
-          {<TypingEffect text="Abbout Me" />}
+          {<TypingEffect text="About Me" />}
         </a>
         <a
           className="px-6 py-6 lg:text-2xl flex justify-center items-center"
           href="#about"
         >
-          {<TypingEffect text="Coontact Me" />}
+          {<TypingEffect text="Contact Me" />}
         </a>
       </div>
     </div>

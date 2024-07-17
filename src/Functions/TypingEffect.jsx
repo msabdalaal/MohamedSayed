@@ -1,20 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
-const TypingEffect = ({ text, typingSpeed = 100 }) => {
+const TypingEffect = ({ text }) => {
   const [displayedText, setDisplayedText] = useState('');
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    let index = 0;
-    const timer = setInterval(() => {
-      setDisplayedText((prev) => prev + text.charAt(index));
-      index++;
-      if (index === text.length) clearInterval(timer);
-    }, typingSpeed);
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayedText(displayedText + text.charAt(index));
+        setIndex(index + 1);
+      }, 100); // Adjust the typing speed by changing the delay (in ms)
+      return () => clearTimeout(timeout);
+    }
+  }, [index, text, displayedText]);
 
-    return () => clearInterval(timer); // Cleanup on component unmount
-  }, [text, typingSpeed]);
-
-  return <span>{displayedText}</span>;
+  return (
+    <div>
+      {displayedText}
+    </div>
+  );
 };
 
 export default TypingEffect;
