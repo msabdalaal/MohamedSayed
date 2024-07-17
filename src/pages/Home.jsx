@@ -12,7 +12,7 @@ export default function Home() {
   const phrases = [
     "I am Mohamed Sayed",
     "I am a Web Developer",
-    "I am Graphic Designer",
+    "I am a Graphic Designer",
   ];
 
   useEffect(() => {
