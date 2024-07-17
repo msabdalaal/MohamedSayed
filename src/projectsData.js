@@ -99,13 +99,13 @@ export default [
     github: "https://github.com/msabdalaal/Netflix-Clone",
     bright: true,
   },
-  // {
-  //   id: 11,
-  //   title: "Spotify Clone",
-  //   image: "/Work-12.png",
-  //   description: "A Responsive clone for Spotify Website",
-  //   url: "https://spotify-msabdalaal.netlify.app/",
-  //   github: "https://github.com/msabdalaal/Spotify-Clone",
-  //   bright: true,
-  // },
+  {
+    id: 11,
+    title: "Portofolio Wbesite",
+    image: "/Work-13.png",
+    description: "A Responsive Portofolio Website",
+    url: "https://simone-msabdalaal.netlify.app/",
+    github: "https://github.com/msabdalaal/Simone",
+    bright: false,
+  },
 ];
