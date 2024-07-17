@@ -44,11 +44,10 @@ export default function Home() {
     <div id="home" className="section home lg:items-start pl-0 lg:pl-32 ">
       <img src={HeroImage} alt="Hero Image" className="hidden lg:block" />
       <div className="text sm:text-center lg:text-left">
-        <h2 className="text-3xl lg:text-4xl">
+        <h1 className="text-4xl lg:text-6xl">
           {text}
           <span className="cursor"></span>|
-        </h2>
-        <h1 className="text-4xl lg:text-6xl"></h1>
+        </h1>
       </div>
       <div className="links justify-center xl:justify-start">
         <a
