@@ -108,4 +108,14 @@ export default [
     github: "https://github.com/msabdalaal/Simone",
     bright: false,
   },
+  {
+    id: 12,
+    title: "FULL STACK - Business Managment System",
+    image: "/Work-14.png",
+    description:
+      "Business Managment System for Managing (Small, Big) Stores and Companies.",
+    url: "https://bms-msabdalaals-projects.vercel.app/",
+    github: "https://github.com/msabdalaal/BMS",
+    bright: false,
+  },
 ];
