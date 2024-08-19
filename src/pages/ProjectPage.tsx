@@ -4,7 +4,7 @@ const styles = {
 };
 export default function ProjectPage() {
   const { pathname } = location;
-  const id = +pathname.split("/")[2].split("%")[0];
+  const id = +pathname.split("/")[3].split("%")[0];
   console.log(id);
   const project = projects[id];
 
