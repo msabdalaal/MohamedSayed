@@ -18,7 +18,7 @@ export default function Navbar() {
             <div className="flex w-full px-2 md:px-0 justify-between">
               <div className="flex items-center font-bold gap-3 ">
                 <div className="w-14 h-14 overflow-hidden rounded-full border-2 hover:border-[#7843E9]">
-                  <Link to={"/"}>
+                  <Link to={"/MohamedSayed/"}>
                     <img
                       src={logoImg}
                       alt="Mohamed Sayed Logo Image"
@@ -27,7 +27,7 @@ export default function Navbar() {
                   </Link>
                 </div>
                 <Link
-                  to={"/"}
+                  to={"/MohamedSayed/"}
                   className="text-black hover:text-[#7843E9] text-xl"
                 >
                   MOHAMED SAYED
@@ -51,28 +51,28 @@ export default function Navbar() {
               <div className="">
                 <ul className="hidden md:flex gap-10">
                   <li className="header__sm-menu-link">
-                    <a href="/#" className={styles.navLink}>
+                    <a href="/MohamedSayed/#" className={styles.navLink}>
                       {" "}
                       Home{" "}
                     </a>
                   </li>
 
                   <li className="header__sm-menu-link">
-                    <a href="/#about" className={styles.navLink}>
+                    <a href="/MohamedSayed/#about" className={styles.navLink}>
                       {" "}
                       About{" "}
                     </a>
                   </li>
 
                   <li className="header__sm-menu-link">
-                    <a href="/#projects" className={styles.navLink}>
+                    <a href="/MohamedSayed/#projects" className={styles.navLink}>
                       {" "}
                       Projects{" "}
                     </a>
                   </li>
 
                   <li className="header__sm-menu-link">
-                    <a href="/#contact" className={styles.navLink}>
+                    <a href="/MohamedSayed/#contact" className={styles.navLink}>
                       {" "}
                       Contact{" "}
                     </a>
@@ -85,23 +85,23 @@ export default function Navbar() {
         {showNavbar && (
           <ul className="">
             <li className={styles.navSmLink}>
-              <a href="/#" className={styles.navLink}>
+              <a href="/MohamedSayed/#" className={styles.navLink}>
                 {" "}
                 Home{" "}
               </a>
             </li>
             <li className={styles.navSmLink}>
-              <a href="/#about" className={styles.navLink}>
+              <a href="/MohamedSayed/#about" className={styles.navLink}>
                 About{" "}
               </a>
             </li>
             <li className={styles.navSmLink}>
-              <a href="/#projects" className={styles.navLink}>
+              <a href="/MohamedSayed/#projects" className={styles.navLink}>
                 Projects
               </a>
             </li>
             <li className={styles.navSmLink}>
-              <a href="/#contact" className={styles.navLink}>
+              <a href="/MohamedSayed/#contact" className={styles.navLink}>
                 {" "}
                 Contact{" "}
               </a>

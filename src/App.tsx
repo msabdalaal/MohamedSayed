@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route
-            path="/"
+            path="/MohamedSayed/"
             element={
               <>
                 <Home />
@@ -26,7 +26,7 @@ function App() {
               </>
             }
           />
-          <Route path="/projects/:id" element={<ProjectPage />} />
+          <Route path="/MohamedSayed/projects/:id" element={<ProjectPage />} />
         </Routes>
       </BrowserRouter>
     </>
