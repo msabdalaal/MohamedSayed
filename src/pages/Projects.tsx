@@ -18,7 +18,7 @@ export default function Projects() {
           <h3 className="text-2xl font-bold">{project.title}</h3>
           <p className="text-[#333]">{project.description}</p>
           <Link
-            to={`/projects/${project.id}}`}
+            to={`/MohamedSayed/projects/${project.id}}`}
             className="btn w-max px-10 py-4"
           >
             Case Study
