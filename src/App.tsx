@@ -22,12 +22,12 @@ function App() {
                 <About />
                 <Projects />
                 <Contact />
-                <Footer />
               </>
             }
           />
           <Route path="/MohamedSayed/projects/:id" element={<ProjectPage />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
