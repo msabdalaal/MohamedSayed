@@ -4,10 +4,10 @@ export default function Projects() {
   const DisplayProjects = () => {
     return projects.map((project) => (
       <div className="md:grid grid-cols-2" key={project.id}>
-        <div className="">
+        <div className="w-full">
           <div className="w-full top-6 ">
             <img
-              src={project.image}
+              src={`/MohamedSayed${project.image}`}
               className="w-full h-full object-cover"
               alt=""
               loading="lazy"
