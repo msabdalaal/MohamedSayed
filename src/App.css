@@ -1,19 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-  list-style-type: none;
-  font-family: "Courier Prime", monospace;
-}
-::-webkit-scrollbar {
-  width: 0rem;
-  height: 0rem;
-  background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background-color: hsl(235, 19%, 35%);
-  border-radius: 1rem;
-}
-a:hover {
-  cursor: pointer;
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  transition: all 0.5s;
+  scroll-behavior: smooth;
 }
 body {
-  overflow-x: hidden;
+  background-color: white;
+  color: #333333;
+}
+
+.btn {
+  background: #7843e9;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+#home {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(./assets/svg/common-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer {
+  color: white;
 }
