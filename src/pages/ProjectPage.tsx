@@ -37,7 +37,7 @@ export default function ProjectPage() {
           <div className=" flex flex-col items-center gap-10">
             <div className="project-details__showcase-img-cont">
               <img
-                src={project.image}
+                src={`/MohamedSayed${project.image}`}
                 alt="Project Image"
                 className="project-details__showcase-img"
               />
