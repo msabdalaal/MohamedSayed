@@ -159,7 +159,7 @@ export const projects: project[] = [
     description: "A Responsive Portofolio Website",
     overView:
       "A Responsive single page website for displaying portfolio and showcases projects.",
-    technologies: ["HTML", "Bootstrap", "ReactJS", "API"],
+    technologies: ["HTML", "Bootstrap", "ReactJS", "Typescript", "API"],
     url: "https://simone-msabdalaal.netlify.app/",
     github: "https://github.com/msabdalaal/Simone",
     bright: false,

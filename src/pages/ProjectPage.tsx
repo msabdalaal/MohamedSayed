@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { projects } from "../projectsData";
 const styles = {
   skill: "p-2 rounded-md bg-[#9993] text-[#666] font-bold text-center",
@@ -7,6 +8,10 @@ export default function ProjectPage() {
   const id = +pathname.split("/")[3].split("%")[0];
   console.log(id);
   const project = projects[id];
+
+  useEffect(() => {
+    document.documentElement.scrollTop = 0;
+  }, []);
 
   return (
     <>
