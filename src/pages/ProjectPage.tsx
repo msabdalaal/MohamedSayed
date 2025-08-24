@@ -69,20 +69,24 @@ export default function ProjectPage() {
               <div className="flex flex-col gap-5">
                 <h3 className="text-2xl md:text-3xl font-bold">See Live</h3>
                 <div className="flex gap-5">
-                  <a
-                    href={project.url}
-                    className="btn w-max px-10 py-4"
-                    target="_blank"
-                  >
-                    Live Link
-                  </a>
-                  <a
-                    href={project.github}
-                    className="bg-white border-2 rounded-md border-[#7843E9] w-max px-10 py-4 font-bold text-lg"
-                    target="_blank"
-                  >
-                    Code Link
-                  </a>
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      className="btn w-max px-10 py-4"
+                      target="_blank"
+                    >
+                      Live Link
+                    </a>
+                  )}
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      className="bg-white border-2 rounded-md border-[#7843E9] w-max px-10 py-4 font-bold text-lg"
+                      target="_blank"
+                    >
+                      Code Link
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

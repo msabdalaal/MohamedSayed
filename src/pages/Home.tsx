@@ -22,8 +22,9 @@ export default function Home() {
         </h1>
         <div className="flex justify-center">
           <p className="text-lg md:text-xl w-2/3">
-            A Result-Oriented Web Developer building and managing Websites and
-            Web Applications that leads to the success of the overall product
+            A Result-Oriented <strong>Full Stack Developer</strong> building and
+            managing Websites and Web Applications that leads to the success of
+            the overall product
           </p>
         </div>
         <div className="">

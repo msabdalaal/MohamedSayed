@@ -5,9 +5,15 @@ export default function Projects() {
     return projects.map((project) => (
       <div className="md:grid grid-cols-2" key={project.id}>
         <div className="w-full">
-          <div className="w-full top-6 ">
+          <div className="w-full top-6 relative overflow-hidden">
             <img
               src={`/MohamedSayed${project.image}`}
+              className="w-[72%] top-[10%] left-[14%] object-cover absolute -z-10"
+              alt=""
+              loading="lazy"
+            />
+            <img
+              src={`/MohamedSayed/template.png`}
               className="w-full h-full object-cover"
               alt=""
               loading="lazy"
@@ -15,7 +21,16 @@ export default function Projects() {
           </div>
         </div>
         <div className="text-center md:text-left md:pl-16 flex flex-col justify-center items-center md:items-start gap-5 my-4">
-          <h3 className="text-2xl font-bold">{project.title}</h3>
+          <h3 className="text-2xl font-bold">
+            {project.title}
+            <span
+              className={`rounded-full text-sm ml-4 px-2 py-1 font-normal ${
+                project.isPublished ? "bg-green-200" : "bg-gray-200"
+              }`}
+            >
+              {project.isPublished ? "Published" : "Not Published"}
+            </span>
+          </h3>
           <p className="text-[#333]">{project.description}</p>
           <Link
             to={`/MohamedSayed/projects/${project.id}}`}
@@ -41,7 +56,7 @@ export default function Projects() {
           </span>
         </h2>
 
-        <div className="flex flex-col-reverse gap-5 md:gap-16">
+        <div className="flex flex-col gap-5 md:gap-16">
           <DisplayProjects />
         </div>
       </div>
